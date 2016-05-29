@@ -1,7 +1,7 @@
 # UIColorExtension
 iOS Swift UIColorExtension
 
-Access easily flat colors & social colors with ease...
+Access easily flat colors & social colors
 
 **Example: ```self.view.backgroundColor = UIColor.clouds()```**
 
