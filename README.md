@@ -5,7 +5,7 @@ Access easily flat colors & social colors with ease...
 
 **Example: self.view.backgroundColor = UIColor.clouds()**
 
-How to use? Just drag 'n drop UIColorExtension.swift file to your project.
+**How to use?** Just drag 'n drop UIColorExtension.swift file to your project.
 
 ### Available Colors: ###
 
