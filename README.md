@@ -61,3 +61,5 @@ Access easily flat colors & social colors with ease...
 FlatUIColors values taken from https://flatuicolors.com
 
 Social Colors values taken from https://www.lockedowndesign.com/social-media-colors/
+
+Feel free to contribute!
