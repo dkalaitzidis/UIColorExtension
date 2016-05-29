@@ -5,7 +5,7 @@ iOS Swift UIColorExtension
 
 **Example: self.view.backgroundColor = UIColor.clouds()**
 
-Available Colors:
+### Available Colors: ###
 
 #FlatUIColors
 
