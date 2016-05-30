@@ -202,15 +202,15 @@ extension UIColor{
     }
     
     //Hex to UIColor
-    class func colorWithHexString (hex:String) -> UIColor {
+    class func colorWithHexString (hex:String) -> UIColor{
         var hexColor:String = hex.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).uppercaseString
         
-        if (hexColor.hasPrefix("#")) {
+        if (hexColor.hasPrefix("#")){
             hexColor = (hexColor as NSString).substringFromIndex(1)
         }
         
-        if (hexColor.characters.count != 6) {
-            return UIColor.grayColor()
+        if (hexColor.characters.count != 6){
+            return UIColor.blackColor()
         }
         
         let rString = (hexColor as NSString).substringToIndex(2)
