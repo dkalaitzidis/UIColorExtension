@@ -201,4 +201,28 @@ extension UIColor{
         return UIColor(R: 255, G: 252, B: 0)
     }
     
+    //Hex to UIColor
+    class func colorWithHexString (hex:String) -> UIColor {
+        var hexColor:String = hex.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).uppercaseString
+        
+        if (hexColor.hasPrefix("#")) {
+            hexColor = (hexColor as NSString).substringFromIndex(1)
+        }
+        
+        if (hexColor.characters.count != 6) {
+            return UIColor.grayColor()
+        }
+        
+        let rString = (hexColor as NSString).substringToIndex(2)
+        let gString = ((hexColor as NSString).substringFromIndex(2) as NSString).substringToIndex(2)
+        let bString = ((hexColor as NSString).substringFromIndex(4) as NSString).substringToIndex(2)
+        
+        var R:CUnsignedInt = 0, G:CUnsignedInt = 0, B:CUnsignedInt = 0;
+        NSScanner(string: rString).scanHexInt(&R)
+        NSScanner(string: gString).scanHexInt(&G)
+        NSScanner(string: bString).scanHexInt(&B)
+        
+        return UIColor(red: CGFloat(R) / 255.0, green: CGFloat(G) / 255.0, blue: CGFloat(B) / 255.0, alpha: CGFloat(1))
+    }
+    
 }
