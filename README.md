@@ -1,13 +1,9 @@
 # UIColorExtension
 iOS Swift UIColorExtension
 
-With UIColorExtension you can access FlatUIColors & SocialColors with ease, also you can convert any HEX color into UIColor.
+With UIColorExtension you can access FlatUIColors & SocialColors with ease.
 
 **How to use?** Just drag 'n drop UIColorExtension.swift file to your project.
-
-### HEX to UIColor ###
-**Example: ```self.view.backgroundColor = UIColor.colorWithHEXString("#9b59b6")```**
-
 
 ### Available Colors: ###
 **Example: ```self.view.backgroundColor = UIColor.clouds()```**
